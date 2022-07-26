@@ -339,8 +339,9 @@ const cleanupCollection = function(collection) {
                 break
         }
 
-
-        fixed[key] = value.toString()
+        if (value !== null) {
+                fixed[key] = value.toString()
+        }
     })
 
     return fixed
