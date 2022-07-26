@@ -6,4 +6,5 @@ WORKDIR /usr/node_app
 
 RUN npm install --production
 
-CMD ["npm", "start"]
+#CMD ["npm", "start"]
+CMD ["node", "index.js"]
